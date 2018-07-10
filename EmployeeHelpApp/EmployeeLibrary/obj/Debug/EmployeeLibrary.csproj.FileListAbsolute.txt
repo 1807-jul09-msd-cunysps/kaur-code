@@ -1,0 +1,6 @@
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\bin\Debug\EmployeeLibrary.dll
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\bin\Debug\EmployeeLibrary.pdb
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\obj\Debug\EmployeeLibrary.csprojResolveAssemblyReference.cache
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\obj\Debug\EmployeeLibrary.csproj.CoreCompileInputs.cache
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\obj\Debug\EmployeeLibrary.dll
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeLibrary\obj\Debug\EmployeeLibrary.pdb

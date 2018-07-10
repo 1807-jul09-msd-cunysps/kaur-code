@@ -1,0 +1,10 @@
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\bin\Debug\EmployeeClient.exe.config
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\bin\Debug\EmployeeClient.exe
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\bin\Debug\EmployeeClient.pdb
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\bin\Debug\EmployeeLibrary.dll
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\bin\Debug\EmployeeLibrary.pdb
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\obj\Debug\EmployeeClient.csprojResolveAssemblyReference.cache
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\obj\Debug\EmployeeClient.csproj.CoreCompileInputs.cache
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\obj\Debug\EmployeeClient.csproj.CopyComplete
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\obj\Debug\EmployeeClient.exe
+C:\Rev-CUNY\EmployeeHelpApp\EmployeeClient\obj\Debug\EmployeeClient.pdb
