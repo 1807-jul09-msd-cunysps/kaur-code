@@ -8,6 +8,7 @@ namespace EmployeeLibrary
 {
     public  class Employee: Person
     {
+        //SALARY COMPONENTS
         public decimal bSal { get; set; } = 75.50M;
         public decimal hra { get; set; } = 50.75M;
         public decimal ta { get; set; } = 40.65M;
