@@ -23,11 +23,12 @@ namespace EmployeeLibrary
                 return hra + ta + bSal - tds;
             }
         }
+        public int creditScore { get; set; }
 
-      /*  public override string GetPersonInfo(string firstName, string lastName, short age, long ssn)
-        {
-            return $"Name :{firstName} {lastName}, Age : {age}, SSN : {ssn}. Salary : {salary}";
-        }*/
+        /*  public override string GetPersonInfo(string firstName, string lastName, short age, long ssn)
+          {
+              return $"Name :{firstName} {lastName}, Age : {age}, SSN : {ssn}. Salary : {salary}";
+          }*/
         public Employee()
         {
 

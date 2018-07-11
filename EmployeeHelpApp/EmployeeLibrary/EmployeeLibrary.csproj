@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmexCard.cs" />
+    <Compile Include="BOICard.cs" />
+    <Compile Include="CorporateCreditCard.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="ICreditCard.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
