@@ -4,6 +4,7 @@ namespace EmployeeLibrary
 {
     public class Person
     {
+        //Git Comment sample
         long ssn;
         string creditCardNum;
         //property

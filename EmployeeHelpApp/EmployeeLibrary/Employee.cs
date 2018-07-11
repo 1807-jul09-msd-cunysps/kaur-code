@@ -12,7 +12,7 @@ namespace EmployeeLibrary
         public decimal bSal { get; set; } = 75.50M;
         public decimal hra { get; set; } = 50.75M;
         public decimal ta { get; set; } = 40.65M;
-        public decimal tax { get; set; } = 8.75M;
+        public decimal tax { get; set; } = 8.75M; 
         public decimal tds { get {
                 return bSal * (tax/100);
             }
