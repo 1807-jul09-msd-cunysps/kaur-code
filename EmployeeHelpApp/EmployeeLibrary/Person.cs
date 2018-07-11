@@ -5,8 +5,24 @@ namespace EmployeeLibrary
     public class Person
     {
         long ssn;
-        short age;
-        string firstName, lastName;
+        string creditCardNum;
+        //property
+        public string ccn {
+            get {
+                if (age > 15)
+                    return creditCardNum;
+                else
+                    return "Not allowed";
+            }
+            set {
+                creditCardNum = value;
+            }
+        }
+        //autonomous property
+        public string cvv { get;}
+        public  short age=18;
+        public string firstName, lastName;
+
         /// <summary>
         /// Constructor
         /// </summary>
@@ -16,6 +32,7 @@ namespace EmployeeLibrary
             age = 44;
             firstName = "Carol";
             lastName = "Baxtor";
+            creditCardNum = "1234123412341234";
             Console.WriteLine($"Name :{firstName} {lastName}, Age : {age}, SSN : {ssn}");
         }
         /// <summary>
@@ -45,7 +62,7 @@ namespace EmployeeLibrary
             }
             return password;
         }
-        public string GetPersonInfo(string firstName, string lastName, short age, long ssn)
+        public virtual string GetPersonInfo(string firstName, string lastName, short age, long ssn)
         {
             return $"Name :{firstName} {lastName}, Age : {age}, SSN : {ssn}";
         }
