@@ -22,48 +22,52 @@ namespace EmployeeClient
     {   
         static void Main(string[] args)
         {
-            /*Employee e1 = new Employee();
+            #region GenericsExample
+           /* Console.WriteLine(Compare<int>.CompareToObj(10,20));
+            Console.WriteLine(Compare<string>.CompareToObj("Briyana", "Briyana"));
+            Employee e1 = new Employee();
             e1.firstName = "Joy";
             e1.ccn = "123456789123";
-            Employee e2 = e1;
-            Console.WriteLine(Compare<Employee>.CompareToObj(e1, e2));
-            */
-
-
+            //Employee e2 = e1; // returns comparison as true
+            Employee e2 = new Employee();
+            e2.firstName = "Joy";
+            e2.ccn = "123456789123";
+            Console.WriteLine(Compare<Employee>.CompareToObj(e1, e2));// returns comparison as false*/
+            #endregion
             #region StaticCode
             //---------Test 
-             Console.WriteLine(Math.Sqrt(25));
-             Console.WriteLine("Please select the convertor direction");
-             Console.WriteLine("1. From Celsius to Fahrenheit.");
-             Console.WriteLine("2. From Fahrenheit to Celsius.");
-             Console.Write(":");
+            /*  Console.WriteLine(Math.Sqrt(25));
+              Console.WriteLine("Please select the convertor direction");
+              Console.WriteLine("1. From Celsius to Fahrenheit.");
+              Console.WriteLine("2. From Fahrenheit to Celsius.");
+              Console.Write(":");
 
-             string selection = Console.ReadLine();
-             double F, C = 0;
+              string selection = Console.ReadLine();
+              double F, C = 0;
 
-             switch (selection)
-             {
-                 case "1":
-                     Console.Write("Please enter the Celsius temperature: ");
-                     F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine());
-                     Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
-                     break;
+              switch (selection)
+              {
+                  case "1":
+                      Console.Write("Please enter the Celsius temperature: ");
+                      F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine());
+                      Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
+                      break;
 
-                 case "2":
-                     Console.Write("Please enter the Fahrenheit temperature: ");
-                     C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine());
-                     Console.WriteLine("Temperature in Celsius: {0:F2}", C);
-                     break;
+                  case "2":
+                      Console.Write("Please enter the Fahrenheit temperature: ");
+                      C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine());
+                      Console.WriteLine("Temperature in Celsius: {0:F2}", C);
+                      break;
 
-                 default:
-                     Console.WriteLine("Please select a convertor.");
-                     break;
-             }
+                  default:
+                      Console.WriteLine("Please select a convertor.");
+                      break;
+              }
 
-             // Keep the console window open in debug mode.
-             Console.WriteLine("Press any key to exit.");
-             Console.ReadKey();
-             
+              // Keep the console window open in debug mode.
+              Console.WriteLine("Press any key to exit.");
+              Console.ReadKey();*/
+
             #endregion
             #region StructsCall
             /*Point a = new Point(10, 10);
@@ -71,15 +75,14 @@ namespace EmployeeClient
             a.x = 20;
             Console.WriteLine(b.x);*/
             #endregion
-        
-            # region BoxingAndUnboxing
-                        /*int a = 10;
-                        string b = Convert.ToString(a);
-                        Console.WriteLine(a+" "+b);
-                        string c = "123";
-                        int result;
-                        long d =Convert.ToInt64(c);
-                        Console.WriteLine(d);*/
+            #region BoxingAndUnboxing
+            /*int a = 10;
+            string b = Convert.ToString(a);
+            Console.WriteLine(a+" "+b);
+            string c = "123";
+            int result;
+            long d =Convert.ToInt64(c);
+            Console.WriteLine(d);*/
             #endregion
             /*Person person=new Person();// reference to Person class
            Console.WriteLine( person.GetPersonInfo("Rubina","Ahmed","Age:21","SSN: 22356568","Credita Card Number: 123456789", "Address :123, 1st Ave 67th street, NY, 11041","Mariatal Status: single"));

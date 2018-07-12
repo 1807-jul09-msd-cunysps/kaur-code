@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeLibrary
 {
-    public static class Compare<T>
+    public static class Compare<T> 
     {   
         public static bool CompareToObj(T a, T b)
         {
