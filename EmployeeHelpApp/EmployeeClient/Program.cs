@@ -22,17 +22,40 @@ namespace EmployeeClient
     {   
         static void Main(string[] args)
         {
+            #region Arrays
+            string[] names;// declaration
+            names = new string[10];
+            names[0] = "Jase";
+            names[1] = "Bunmi";
+            names[2] = "Isaac";
+            names[3] = "Joe";
+            /* for (int i = 0; i < names.Length; i++)
+             {
+                 Console.WriteLine(names[i]);
+             }*/
+            /*foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }*/
+            int x = 4, y = 3,z=2;
+            int[,,] matrix = new int[x,y,z];
+            matrix[0,0,0] = 1;
+            Console.WriteLine(matrix.GetLength(2));
+           
+            Console.WriteLine(matrix.Rank);
+            Console.WriteLine(matrix.Length);
+            #endregion
             #region GenericsExample
-           /* Console.WriteLine(Compare<int>.CompareToObj(10,20));
-            Console.WriteLine(Compare<string>.CompareToObj("Briyana", "Briyana"));
-            Employee e1 = new Employee();
-            e1.firstName = "Joy";
-            e1.ccn = "123456789123";
-            //Employee e2 = e1; // returns comparison as true
-            Employee e2 = new Employee();
-            e2.firstName = "Joy";
-            e2.ccn = "123456789123";
-            Console.WriteLine(Compare<Employee>.CompareToObj(e1, e2));// returns comparison as false*/
+            /* Console.WriteLine(Compare<int>.CompareToObj(10,20));
+             Console.WriteLine(Compare<string>.CompareToObj("Briyana", "Briyana"));
+             Employee e1 = new Employee();
+             e1.firstName = "Joy";
+             e1.ccn = "123456789123";
+             //Employee e2 = e1; // returns comparison as true
+             Employee e2 = new Employee();
+             e2.firstName = "Joy";
+             e2.ccn = "123456789123";
+             Console.WriteLine(Compare<Employee>.CompareToObj(e1, e2));// returns comparison as false*/
             #endregion
             #region StaticCode
             //---------Test 
@@ -84,6 +107,7 @@ namespace EmployeeClient
             long d =Convert.ToInt64(c);
             Console.WriteLine(d);*/
             #endregion
+            #region OOP
             /*Person person=new Person();// reference to Person class
            Console.WriteLine( person.GetPersonInfo("Rubina","Ahmed","Age:21","SSN: 22356568","Credita Card Number: 123456789", "Address :123, 1st Ave 67th street, NY, 11041","Mariatal Status: single"));
             */
@@ -134,6 +158,7 @@ namespace EmployeeClient
                  Console.WriteLine("you got 20 % off on yearly fee");
              else
                  Console.WriteLine("Not Eligible for discount dur to low credit score");*/
+            #endregion
             Console.Read();
         }
     }
