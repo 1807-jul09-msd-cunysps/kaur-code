@@ -5,10 +5,13 @@ namespace EmployeeLibrary
     sealed class NotToBeExtended { }
     public abstract class Species { }
     public abstract class Human{}
-    public abstract partial class Person:Human
+    public abstract partial class Person//:Human
     {
         //Git Comment sample
         long ssn;
+        public long Ssn {
+            get { return ssn; }
+            set { ssn = value; } }
         string creditCardNum;
         //property
         public string ccn {

@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace EmployeeLibrary
 {
+   class Converter
+    {
+
+    }
     public static class TemperatureConverter
     {
+        static TemperatureConverter()
+        {
+            Console.WriteLine("In Static constructor "+DateTime.Now.Millisecond);
+        }
         public static double CelsiusToFahrenheit(string temperatureCelsius)
         {
+            Console.WriteLine("In Static method "+DateTime.Now.Millisecond);
             // Convert argument to double for calculations.
             double celsius = Double.Parse(temperatureCelsius);
 
