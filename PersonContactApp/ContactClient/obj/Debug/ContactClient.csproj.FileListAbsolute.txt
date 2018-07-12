@@ -1,0 +1,10 @@
+C:\Rev-CUNY\PersonContactApp\ContactClient\obj\Debug\ContactClient.csproj.CoreCompileInputs.cache
+C:\Rev-CUNY\PersonContactApp\ContactClient\bin\Debug\ContactClient.exe.config
+C:\Rev-CUNY\PersonContactApp\ContactClient\bin\Debug\ContactClient.exe
+C:\Rev-CUNY\PersonContactApp\ContactClient\bin\Debug\ContactClient.pdb
+C:\Rev-CUNY\PersonContactApp\ContactClient\bin\Debug\ContactLibrary.dll
+C:\Rev-CUNY\PersonContactApp\ContactClient\bin\Debug\ContactLibrary.pdb
+C:\Rev-CUNY\PersonContactApp\ContactClient\obj\Debug\ContactClient.csprojResolveAssemblyReference.cache
+C:\Rev-CUNY\PersonContactApp\ContactClient\obj\Debug\ContactClient.csproj.CopyComplete
+C:\Rev-CUNY\PersonContactApp\ContactClient\obj\Debug\ContactClient.exe
+C:\Rev-CUNY\PersonContactApp\ContactClient\obj\Debug\ContactClient.pdb
