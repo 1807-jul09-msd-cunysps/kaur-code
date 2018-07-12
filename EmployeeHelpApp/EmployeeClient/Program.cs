@@ -3,6 +3,9 @@ using System.Text;
 using EmployeeLibrary;
 namespace EmployeeClient
 {
+    /// <summary>
+/// Structs Demo
+/// </summary>
     class Point
     {
         public int x, y;
@@ -12,14 +15,50 @@ namespace EmployeeClient
             this.y = y;
         }
     }
+    /// <summary>
+    /// Entry point
+    /// </summary>
     class Programs
     {   
         static void Main(string[] args)
         {
-            Point a = new Point(10, 10);
+            //---------Test Static
+            Console.WriteLine("Please select the convertor direction");
+            Console.WriteLine("1. From Celsius to Fahrenheit.");
+            Console.WriteLine("2. From Fahrenheit to Celsius.");
+            Console.Write(":");
+
+            string selection = Console.ReadLine();
+            double F, C = 0;
+
+            switch (selection)
+            {
+                case "1":
+                    Console.Write("Please enter the Celsius temperature: ");
+                    F = TemperatureConverter.CelsiusToFahrenheit(Console.ReadLine());
+                    Console.WriteLine("Temperature in Fahrenheit: {0:F2}", F);
+                    break;
+
+                case "2":
+                    Console.Write("Please enter the Fahrenheit temperature: ");
+                    C = TemperatureConverter.FahrenheitToCelsius(Console.ReadLine());
+                    Console.WriteLine("Temperature in Celsius: {0:F2}", C);
+                    break;
+
+                default:
+                    Console.WriteLine("Please select a convertor.");
+                    break;
+            }
+
+            // Keep the console window open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+
+            //Structs
+            /*Point a = new Point(10, 10);
             Point b = a;//
             a.x = 20;
-            Console.WriteLine(b.x);
+            Console.WriteLine(b.x);*/
 
             /*int a = 10;
             string b = Convert.ToString(a);
@@ -54,31 +93,31 @@ namespace EmployeeClient
              Manager mgr = new Manager();*/
 
             //------------INTERFACE-----------------
-           /* Employee emp1 = new Employee();
-            emp1.firstName = "Tanisha";
-            emp1.lastName = "Israel";
-            emp1.creditScore = 800;
+            /* Employee emp1 = new Employee();
+             emp1.firstName = "Tanisha";
+             emp1.lastName = "Israel";
+             emp1.creditScore = 800;
 
-            IAmexCard amexcc = new CorporateCreditCard();// upcasting
-            var discount=amexcc.Offer(emp1.creditScore);
-            
-            IBOICard boiCard = new CorporateCreditCard();
-            boiCard.CreditLimit(450);
-            //var discountBoi= boiCard.Offer(750);
-            //Console.WriteLine(discountBoi);
-            //var discount=card.Offer(emp1.creditScore);
-            if (discount==25)
-                Console.WriteLine("you got 25 % off on yearly fee");
-            else if (discount == 30)
-                Console.WriteLine("you got 30 % off on yearly fee");
-            else if(discount==15)
-                Console.WriteLine("you got 15 % off on yearly fee");
-            else if (discount == 10)
-                Console.WriteLine("you got 10 % off on yearly fee");
-            else if (discount == 20)
-                Console.WriteLine("you got 20 % off on yearly fee");
-            else
-                Console.WriteLine("Not Eligible for discount dur to low credit score");*/
+             IAmexCard amexcc = new CorporateCreditCard();// upcasting
+             var discount=amexcc.Offer(emp1.creditScore);
+
+             IBOICard boiCard = new CorporateCreditCard();
+             boiCard.CreditLimit(450);
+             //var discountBoi= boiCard.Offer(750);
+             //Console.WriteLine(discountBoi);
+             //var discount=card.Offer(emp1.creditScore);
+             if (discount==25)
+                 Console.WriteLine("you got 25 % off on yearly fee");
+             else if (discount == 30)
+                 Console.WriteLine("you got 30 % off on yearly fee");
+             else if(discount==15)
+                 Console.WriteLine("you got 15 % off on yearly fee");
+             else if (discount == 10)
+                 Console.WriteLine("you got 10 % off on yearly fee");
+             else if (discount == 20)
+                 Console.WriteLine("you got 20 % off on yearly fee");
+             else
+                 Console.WriteLine("Not Eligible for discount dur to low credit score");*/
             Console.Read();
         }
     }

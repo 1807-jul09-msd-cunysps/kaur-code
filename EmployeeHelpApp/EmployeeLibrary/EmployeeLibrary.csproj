@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AmexCard.cs" />
     <Compile Include="BOICard.cs" />
+    <Compile Include="CityTemperatureHelper.cs" />
     <Compile Include="Person.Function.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ICreditCard.cs" />
