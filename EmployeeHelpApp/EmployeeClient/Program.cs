@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections;// Non Generics
+using System.Collections.Generic;// generics
 using System.Text;
 using EmployeeLibrary;
+
 namespace EmployeeClient
 {
     /// <summary>
@@ -22,28 +25,67 @@ namespace EmployeeClient
     {   
         static void Main(string[] args)
         {
-            #region Arrays
-            string[] names;// declaration
-            names = new string[10];
-            names[0] = "Jase";
-            names[1] = "Bunmi";
-            names[2] = "Isaac";
-            names[3] = "Joe";
-            /* for (int i = 0; i < names.Length; i++)
+            #region Collections
+            //Non-Generic
+            /* ArrayList emp = new ArrayList();
+             emp.Add("Joena");
+             emp.Add(125.50M);
+             emp.Add("IT");
+             emp.Add("1st Ave, 48th street");
+             emp.Remove("IT");
+             foreach (var e in emp)
              {
-                 Console.WriteLine(names[i]);
+                 Console.WriteLine(e);
              }*/
+
+            /*foreach (decimal sal in salary)
+            {
+                Console.WriteLine(sal);
+            }
+            Stack calls = new Stack();
+            calls.Push("123456789");
+            calls.Push(123456789);*/
+
+            /// Generics
+            /* List<decimal> salary = new List<decimal>();
+             salary.Add(125.0M);
+             salary.Add(40.40M);
+             salary.Add(56.89M);*/
+
+            Dictionary<int, string> emps = new Dictionary<int, string>();
+            emps.Add(123, "Yani");
+            emps.Add(124, "Sheena");
+            emps.Add(125,"Manjot");
+            emps.Add(126, "Motena");
+
+            foreach (var key in emps.Keys)
+            {
+                Console.WriteLine(key+" - "+ emps[key]);
+            }
+
+            #endregion
+            #region Arrays
+            /* string[] names;// declaration
+             names = new string[10];
+             names[0] = "Jase";
+             names[1] = "Bunmi";
+             names[2] = "Isaac";
+             names[3] = "Joe";
+             /* for (int i = 0; i < names.Length; i++)
+              {
+                  Console.WriteLine(names[i]);
+              }*/
             /*foreach (string name in names)
             {
                 Console.WriteLine(name);
-            }*/
+            }
             int x = 4, y = 3,z=2;
             int[,,] matrix = new int[x,y,z];
             matrix[0,0,0] = 1;
             Console.WriteLine(matrix.GetLength(2));
            
             Console.WriteLine(matrix.Rank);
-            Console.WriteLine(matrix.Length);
+            Console.WriteLine(matrix.Length);*/
             #endregion
             #region GenericsExample
             /* Console.WriteLine(Compare<int>.CompareToObj(10,20));
