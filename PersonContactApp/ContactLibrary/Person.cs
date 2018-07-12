@@ -18,6 +18,7 @@ namespace ContactLibrary
     {
         public Person()
         {
+            /// Initialise the dependant objects
             address = new Address();
             phone = new Phone();
         }
