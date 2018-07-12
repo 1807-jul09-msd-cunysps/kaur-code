@@ -1,0 +1,16 @@
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\UnitTestEmployeeApp.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\UnitTestEmployeeApp.pdb
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\obj\Debug\UnitTestEmployeeApp.csprojResolveAssemblyReference.cache
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\obj\Debug\UnitTestEmployeeApp.csproj.CoreCompileInputs.cache
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\obj\Debug\UnitTestEmployeeApp.csproj.CopyComplete
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\obj\Debug\UnitTestEmployeeApp.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\obj\Debug\UnitTestEmployeeApp.pdb
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\EmployeeLibrary.dll
+C:\Rev-CUNY\EmployeeHelpApp\UnitTestEmployeeApp\bin\Debug\EmployeeLibrary.pdb

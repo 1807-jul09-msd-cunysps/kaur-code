@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace EmployeeLibrary
 {
-   public interface IAmexCard : ICreditCard
+    public interface IAmexCard : ICreditCard
     {
-       int Offer(int creditScore);
-
-        
+        int Offer(int creditScore);
     }
+
 }

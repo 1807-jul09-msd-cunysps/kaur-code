@@ -37,6 +37,13 @@ namespace EmployeeLibrary
         {
 
         }
+        public override bool IsCitizen(long ssn)
+        {
+            if (ssn != 0)
+                return true;
+            else
+                return false;
+        }
     }
    public class Manager:Employee
     {

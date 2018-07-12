@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EmployeeLibrary</RootNamespace>
     <AssemblyName>EmployeeLibrary</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,10 +43,10 @@
   <ItemGroup>
     <Compile Include="AmexCard.cs" />
     <Compile Include="BOICard.cs" />
-    <Compile Include="CorporateCreditCard.cs" />
+    <Compile Include="Person.Function.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="ICreditCard.cs" />
-    <Compile Include="Person.cs" />
+    <Compile Include="Person.Fields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

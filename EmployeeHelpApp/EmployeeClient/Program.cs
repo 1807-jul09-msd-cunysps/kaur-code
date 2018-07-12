@@ -3,10 +3,24 @@ using System.Text;
 using EmployeeLibrary;
 namespace EmployeeClient
 {
-    class Program
+    class Point
+    {
+        public int x, y;
+        public Point(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+    }
+    class Programs
     {   
         static void Main(string[] args)
         {
+            Point a = new Point(10, 10);
+            Point b = a;//
+            a.x = 20;
+            Console.WriteLine(b.x);
+
             /*int a = 10;
             string b = Convert.ToString(a);
             Console.WriteLine(a+" "+b);
@@ -40,7 +54,7 @@ namespace EmployeeClient
              Manager mgr = new Manager();*/
 
             //------------INTERFACE-----------------
-            Employee emp1 = new Employee();
+           /* Employee emp1 = new Employee();
             emp1.firstName = "Tanisha";
             emp1.lastName = "Israel";
             emp1.creditScore = 800;
@@ -64,7 +78,7 @@ namespace EmployeeClient
             else if (discount == 20)
                 Console.WriteLine("you got 20 % off on yearly fee");
             else
-                Console.WriteLine("Not Eligible for discount dur to low credit score");
+                Console.WriteLine("Not Eligible for discount dur to low credit score");*/
             Console.Read();
         }
     }

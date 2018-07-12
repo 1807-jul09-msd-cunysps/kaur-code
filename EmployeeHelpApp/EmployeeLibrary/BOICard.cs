@@ -8,7 +8,6 @@ namespace EmployeeLibrary
 {
     public interface IBOICard : ICreditCard
     {
-
         int Offer(int creditScore);
         int CreditLimit(int bsal);
        
