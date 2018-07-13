@@ -9,7 +9,7 @@ namespace ContactClient
 {
     class DatabaseNotResponding:ApplicationException
     {
-        public DatabaseNotResponding():base(message)
+        public DatabaseNotResponding():base()
         {
             // logic to exception
         }
@@ -18,14 +18,6 @@ namespace ContactClient
     {
         static int Result(int a, int b)
         {
-            try
-            {
-                throw new DatabaseNotResponding();
-            }
-            catch (Exception ex)
-            {
-
-            }
             var logger = NLog.LogManager.GetCurrentClassLogger();
             ArrayList result = new ArrayList();
             result.Add("test 1");
@@ -44,8 +36,7 @@ namespace ContactClient
             }
             catch (DivideByZeroException ex)
             {
-                //Log the exception
-                
+                //Log the exception                
                 logger.Info(ex.Message);
                 Console.WriteLine("Please provide non zero denominator");
             }
