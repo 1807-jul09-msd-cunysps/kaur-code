@@ -1,0 +1,6 @@
+C:\Rev-CUNY\ConsumeRestApi\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Rev-CUNY\ConsumeRestApi\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Rev-CUNY\ConsumeRestApi\Models\bin\Debug\Models.dll
+C:\Rev-CUNY\ConsumeRestApi\Models\bin\Debug\Models.pdb
+C:\Rev-CUNY\ConsumeRestApi\Models\obj\Debug\Models.dll
+C:\Rev-CUNY\ConsumeRestApi\Models\obj\Debug\Models.pdb
