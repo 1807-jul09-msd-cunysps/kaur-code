@@ -17,6 +17,7 @@ namespace ConsumeRestApi
            // client.BaseAddress = new Uri("https://jsonplaceholder.typicode.com/users");
             var response = await client.GetAsync("https://jsonplaceholder.typicode.com/users");
             var result = await response.Content.ReadAsStringAsync();
+            //deserialize
             var users= JsonConvert.DeserializeObject<IEnumerable<User>>(result);
             return users;
         }
@@ -25,9 +26,8 @@ namespace ConsumeRestApi
             var users = get();
             foreach (var user in users.Result)
             {
-                Console.WriteLine($"{user.id} {user.username}  {user.phone}");
+                Console.WriteLine($"{user.id} | {user.username} | {user.address.city} | {user.phone}");
             }
-            
             Console.Read();
         }
     }
