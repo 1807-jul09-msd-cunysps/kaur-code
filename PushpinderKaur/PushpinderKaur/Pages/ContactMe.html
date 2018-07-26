@@ -9,11 +9,18 @@
         form, address{
             margin:10px;
         }
-        
-        
     </style>
+    <script>
+        //Inline Script
+        //alert('Hello World!');
+        //confirm("Do you want to continue ?");
+        //var name = prompt("Please enter your Name");
+       //document.write("Welcome "+name);
+    </script>
 </head>
 <body style="margin-left:40px">
+
+    <noscript>Your browser disabled the Javascript!!</noscript>
     <div class="container-fluid">
         <div class="row">
             <header>
@@ -28,31 +35,32 @@
         </div>
         <br />
         <div class="row">
-            <address>Address:
+            <address>
+                Address:
                 <span> nth street, abc Avenue</span>
                 <span>101, bllahh blaah apartment</span>
                 <span> New york</span>
                 <br />
-                <span>email:</span>   <a href="mailto:kaurrevature@outlook.com">kaurrevature@outlook.com</a></br>
+                <span>email:</span>   <a href="mailto:kaurrevature@outlook.com">kaurrevature@outlook.com</a><br/>
                 <span>web:</span><a href="www.revature.com">www.revature.com</a>
             </address>
         </div>
         <div class="row">
             <div class="input-group">
                 <form action="/Pages/success.html" method="get">
-                    <fieldset>
+                    <fieldset class="form-control" style="border:1px dotted grey">
                         <legend>Send us your query</legend>
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="name">Name:</label>
-                            <input class="col-sm-8 form-control is-invalid" type="text" id="name" name="user_name" required  placeholder="Enter your name here">
+                            <input class="col-sm-8 form-control" type="text" id="name" name="user_name" required placeholder="Enter your name here">
                             <span class="invalid-feedback">Name is required </span>
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="mail">E-mail:</label>
                             <input class="col-sm-8 form-control" type="email" id="mail" name="user_mail" required autofocus placeholder="Enter your email here" autocomplete="on">
 
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="msg">Message:</label>
                             <textarea class="col-sm-8 form-control" id="msg" name="user_message" required placeholder="Write your query here"></textarea>
                         </div>
@@ -77,5 +85,8 @@
             </div>
         </div>
     </div>
+
+    <script src="../Scripts/Contact.js" type="text/javascript"></script>
+
 </body>
 </html>
