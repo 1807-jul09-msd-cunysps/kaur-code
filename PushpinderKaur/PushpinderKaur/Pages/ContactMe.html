@@ -19,7 +19,7 @@
     </script>
 </head>
 <body style="margin-left:40px">
-
+    <button id="btncolor">Change color</button>
     <noscript>Your browser disabled the Javascript!!</noscript>
     <div class="container-fluid">
         <div class="row">
@@ -41,32 +41,32 @@
                 <span>101, bllahh blaah apartment</span>
                 <span> New york</span>
                 <br />
-                <span>email:</span>   <a href="mailto:kaurrevature@outlook.com">kaurrevature@outlook.com</a><br/>
+                <span>email:</span>   <a href="mailto:kaurrevature@outlook.com">kaurrevature@outlook.com</a><br />
                 <span>web:</span><a href="www.revature.com">www.revature.com</a>
             </address>
         </div>
         <div class="row">
             <div class="input-group">
-                <form action="/Pages/success.html" method="get">
+                <form action="/Pages/success.html" method="get" id="contactForm">
                     <fieldset class="form-control" style="border:1px dotted grey">
                         <legend>Send us your query</legend>
                         <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="name">Name:</label>
-                            <input class="col-sm-8 form-control" type="text" id="name" name="user_name" required placeholder="Enter your name here">
+                            <input class="col-sm-8 form-control" type="text" id="name" name="user_name" placeholder="Enter your name here">
                             <span class="invalid-feedback">Name is required </span>
                         </div>
                         <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="mail">E-mail:</label>
-                            <input class="col-sm-8 form-control" type="email" id="mail" name="user_mail" required autofocus placeholder="Enter your email here" autocomplete="on">
+                            <input class="col-sm-8 form-control" type="email" id="mail" name="user_mail" placeholder="Enter your email here" autocomplete="on">
 
                         </div>
                         <div class="form-group row" style="margin:2px">
                             <label class="col-sm-4 col-form-label" for="msg">Message:</label>
-                            <textarea class="col-sm-8 form-control" id="msg" name="user_message" required placeholder="Write your query here"></textarea>
+                            <textarea class="col-sm-8 form-control" id="msg" name="user_message" placeholder="Write your query here"></textarea>
                         </div>
                         <div class="form-group">
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3">
                                 <label class="form-check-label" for="invalidCheck3">
                                     Agree to terms and conditions
                                 </label>
@@ -77,7 +77,7 @@
                         </div>
 
                     </fieldset>
-
+                    <div id="error" style="color:red"></div>
                     <div class="form-group row">
                         <button class="btn btn-primary" type="submit">Send your message</button>
                     </div>

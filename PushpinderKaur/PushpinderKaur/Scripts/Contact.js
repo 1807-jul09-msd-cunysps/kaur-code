@@ -146,8 +146,43 @@ func();*/
 debugger;
 //countries.push("China");
 //alert(countries.length);
-
+/*
 var countries = "London, USA, India, Denmark, France";
 myarray = countries.split(",");
+*/
+window.onload = function () {
+    var btnColor = document.querySelector('#btncolor');
+    function random(number) {
+        return Math.floor(Math.random() * (number + 1));
+    }
+    /*btnColor.onclick = function () {
+        debugger;
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+    }*/
+    function changecolor() {
+        debugger;
+        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        document.body.style.backgroundColor = rndCol;
+    }
+    // btnColor.addEventListener("click", changecolor);
+    btnColor.onclick = changecolor;
 
+    function checkContactForm(e) {
+        debugger;
+        var mail = document.getElementById("mail").value;
+        var name = document.getElementById("name").value;
+        var msg = document.getElementById("msg").value;
+        var error = document.getElementById("error");
+        if (mail === "" || name === "" || msg === "") {
+            debugger;
+            e.preventDefault();
+            error.innerText = "Name, Email and Message fields cannot be left blank";
+        }
+    }
+
+    var form = document.getElementById("contactForm");
+    form.onsubmit = checkContactForm;
+}
+//form.addEventListener("onsubmit", checkContactForm);
 //Object
