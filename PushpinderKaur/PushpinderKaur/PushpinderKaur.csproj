@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="zipcode.txt" />
     <None Include="packages.config" />
     <Content Include="Pages\Map.html" />
     <Content Include="Scripts\Contact.js" />
@@ -111,6 +112,7 @@
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\less\bootstrap-formhelpers.less" />
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\package.json" />
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\README.md" />
+    <None Include="Properties\PublishProfiles\PushpinderKaurDemo - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

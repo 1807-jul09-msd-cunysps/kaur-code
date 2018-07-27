@@ -1,0 +1,20 @@
+﻿/*Element selector*/
+    body {
+    }
+
+    li {
+        color: blue;
+    }
+/*Id selector*/
+
+#banner {
+    text-align:center;
+    color:darkslateblue;
+    font-family:'Times New Roman';
+}
+a:hover {
+background-color:red;
+}
+
+
+
