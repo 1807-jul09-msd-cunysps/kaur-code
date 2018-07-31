@@ -151,6 +151,65 @@ var countries = "London, USA, India, Denmark, France";
 myarray = countries.split(",");
 */
 window.onload = function () {
+
+    /*Object in JavScript*/
+    /*var user = new Object();// Constuctor
+    user.Name = "Malika";
+    user.Email = "malika@cuny.edu";
+    user.phone = "9876543214";
+    user.Age = 22;
+    user.getUser = function () {
+        return user.Name + " " + user.Email + " " + user.phone + " " + user.Age;
+    }*/
+
+   /* var user = {};// initialiser
+    user.Name = "Malika";
+    user.Email = "malika@cuny.edu";
+    user.phone = "9876543214";
+    user.Age = 22;
+    user.getUser = function () {
+        return user.Name + " " + user.Email + " " + user.phone + " " + user.Age;
+    }*/
+    // Creating objects as functions
+    
+  /*   function User() {
+        this.Name = "Malika";
+        this.Email = "malika@cuny.edu";
+        this.phone = "9876543214";
+        this.Age = 22;
+        this.getUser = function () {
+            return user.Name + " " + user.Email + " " + user.phone + " " + user.Age;
+        }
+    };
+    User.prototype.Address = "New York";
+    var user = new User();
+    */
+    // JavaScript Object literal Notation
+    //var user = {};
+
+  var user = {
+        "First Name" : "Malika",
+        "Email" : "malika@cuny.edu",
+        "phone" : "9876543214",
+        "Age": 22,
+        "Address": {
+          "Street": "1st",
+          "Avenue": "2nd",
+          "City": "NY",
+          "State": "NY",
+          "Country": "US",
+          "Zipcode": "10017"
+      },
+        "getUser" : function () {
+            return user.Name + " " + user.Email + " " + user.phone + " " + user.Age;
+      }
+    };
+    
+  //  alert(Object.getOwnPropertyNames(user));
+   alert(user.Address);
+    //alert(typeof(user));
+
+
     var btnColor = document.querySelector('#btncolor');
     function random(number) {
         return Math.floor(Math.random() * (number + 1));

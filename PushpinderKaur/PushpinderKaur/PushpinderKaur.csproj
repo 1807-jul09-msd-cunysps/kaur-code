@@ -68,10 +68,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\Test.html" />
     <Content Include="zipcode.txt" />
     <None Include="packages.config" />
     <Content Include="Pages\Map.html" />
-    <Content Include="Scripts\Contact.js" />
+    <Content Include="Scripts\CustomJS\Contact.js" />
     <Content Include="Scripts\CustomJS\Register.js" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
@@ -112,6 +113,7 @@
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\less\bootstrap-formhelpers.less" />
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\package.json" />
     <Content Include="Scripts\winmarkltd-BootstrapFormHelpers-d4201db\README.md" />
+    <Content Include="Pages\app.manifest" />
     <None Include="Properties\PublishProfiles\PushpinderKaurDemo - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -269,6 +271,9 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Pages\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />

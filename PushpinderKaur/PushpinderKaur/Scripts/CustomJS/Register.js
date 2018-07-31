@@ -77,12 +77,13 @@ function checkZipcodeWithFile() {
     }
     xhr.send();
 }
-
-    function checkZipcode() {
+function checkZipcode()
+{
         debugger;
         var zipcode = document.getElementById("zipcode").value;
         var clientKey = 'js-YJinPMmmqbKEhKQetnGUovcNgrZRxHmaJuMtXFZUJBf48jUpeKPovT6FFEkAwO60';
         var url = "https://www.zipcodeapi.com/rest/" + clientKey + "/info.json/" + zipcode + "/radians";
+        //1. create XHR object
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url);
         xhr.onreadystatechange = function (e) {    //Call a function when the state changes.
@@ -95,7 +96,6 @@ function checkZipcodeWithFile() {
                     debugger;
                     locationPopulate(result);
                 }
-
             }
      }
         xhr.send();
