@@ -5,8 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ContactLibrary;
+using ContactDAL;
+
 namespace ContactClient
 {
+
     class DatabaseNotResponding:ApplicationException
     {
         public DatabaseNotResponding():base()
@@ -54,32 +57,38 @@ namespace ContactClient
         }
         static void Main(string[] args)
         {
+            #region ADO.NET Call Persons
+            PersonCrud crud = new PersonCrud();
+            var persons=  crud.GetPersons();
+            Console.WriteLine(persons[0].firstName);
+            Console.Read();
+            #endregion
             #region Exception
-            var output = Result(999999999,9);
-            Console.WriteLine(output);
+            //var output = Result(999999999,9);
+            //Console.WriteLine(output);
             #endregion
 
             #region LINQ
-          /*  Person p = new Person();
-            var persons = p.Get();
-            //LINQ-Language Integrate Query
-            //Query Syntax
-            /*var query = from p1 in persons
-                        where p1.firstName.StartsWith("T")
-                        select p1;
-           var query = from p1 in persons
-                         where p1.address.houseNum.Equals("121")
-                         select p1;
+            /*  Person p = new Person();
+              var persons = p.Get();
+              //LINQ-Language Integrate Query
+              //Query Syntax
+              /*var query = from p1 in persons
+                          where p1.firstName.StartsWith("T")
+                          select p1;
+             var query = from p1 in persons
+                           where p1.address.houseNum.Equals("121")
+                           select p1;
 
-            int[] marks = new int[] {45,56,89,78,98 };
+              int[] marks = new int[] {45,56,89,78,98 };
 
-            /*var query = from m in marks
-                        where m > 60 && m<80
-                        select m;
-            foreach (var item in query)
-            {
-                Console.WriteLine($"{item.firstName} {item.lastName} Phone +{item.phone.countrycode+"-"+item.phone.areaCode+"-"+item.phone.number}");
-            }*/
+              /*var query = from m in marks
+                          where m > 60 && m<80
+                          select m;
+              foreach (var item in query)
+              {
+                  Console.WriteLine($"{item.firstName} {item.lastName} Phone +{item.phone.countrycode+"-"+item.phone.areaCode+"-"+item.phone.number}");
+              }*/
             #endregion
             //Method Syntax
         }

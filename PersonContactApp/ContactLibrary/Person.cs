@@ -23,12 +23,13 @@ namespace ContactLibrary
             phone = new Phone();
         }
         public long Pid { get; set; }
+        public string PGuid { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
+        public int Age { get; set; }
+        public string email { get; set; }
         public Address address { get; set; }
         public Phone phone { get; set; }
-
-       
         public List<Person> Get()
         {
 
@@ -40,8 +41,8 @@ namespace ContactLibrary
             p1.address.Pid = p1.Pid;
             p1.address.street = "1st";
             p1.address.city = "New York";
-            p1.address.State = State.NY;
-            p1.address.Country = Country.US;
+            p1.address.State = "NY";
+            p1.address.Country = "US";
             p1.address.zipcode = "10017";
             p1.phone.Pid = p1.Pid;
             p1.phone.areaCode = "204";
@@ -58,8 +59,8 @@ namespace ContactLibrary
             p2.address.Pid = p2.Pid;
             p2.address.street = "21st";
             p2.address.city = "New York";
-            p2.address.State = State.NY;
-            p2.address.Country = Country.US;
+            p2.address.State = "NY";
+            p2.address.Country = "US";
             p2.address.zipcode = "10018";
             p2.phone.Pid = p2.Pid;
             p2.phone.areaCode = "289";
@@ -81,8 +82,8 @@ namespace ContactLibrary
         public string houseNum { get; set; }
         public string street { get; set; }
         public string city { get; set; }
-        public State State { get; set; }
-        public Country Country { get; set; }
+        public string State { get; set; }
+        public string Country { get; set; }
         public string zipcode { get; set; }
     }
 
