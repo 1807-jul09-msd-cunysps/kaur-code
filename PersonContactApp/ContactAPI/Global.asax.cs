@@ -14,8 +14,8 @@ namespace ContactAPI
         protected void Application_Start()
         {
             //This will add the JSON
-            var json = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
-            json.UseDataContractJsonSerializer = true;
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Serialize;
+            GlobalConfiguration.Configuration.Formatters.Remove(GlobalConfiguration.Configuration.Formatters.XmlFormatter);
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);

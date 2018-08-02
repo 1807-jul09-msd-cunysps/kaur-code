@@ -7,6 +7,7 @@ using System.Web.Http;
 using ContactDAL;
 using ContactLibrary;
 using System.Web.Http.Cors;
+using System.Web.Http.Results;
 
 namespace ContactAPI.Controllers
 {
@@ -23,12 +24,13 @@ namespace ContactAPI.Controllers
         }
         //ADD Person
         [HttpPost]
-        public IHttpActionResult Post(Person p)
+        public IHttpActionResult Post([FromBody]Person p)
         {
             if (p != null)
             {
                 // Make a call to CRUD Method to insert in to DB
-                return Ok();
+
+                return Ok("Person Added Successfully!!");
             }
             else
             {

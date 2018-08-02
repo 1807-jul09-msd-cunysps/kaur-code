@@ -22,7 +22,7 @@ namespace ContactAPI
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/Person/{id}",
+                routeTemplate: "api/{Controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }
