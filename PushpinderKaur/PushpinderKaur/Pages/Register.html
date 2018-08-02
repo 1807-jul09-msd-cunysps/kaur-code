@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/CustomJS/Register.js"></script>
+    <title>Join Me</title>
+</head>
+<body>
+   
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                <h1 class="jumbotron jumbotron-fluid" id="banner">Pushpinder Kaur</h1>
+                <nav class="navbar sticky-top navbar-dark bg-primary">
+                    <a class="navbar-brand" href="Home.html">Home</a>
+                    <a class="navbar-brand" href="AboutMe.html">About Me</a>
+                    <a class="navbar-brand" href="ContactMe.html">Contact Me</a>
+                    <a class="navbar-brand" style="margin-left:650px" href="Register.html">Join Me</a>
+                </nav>
+            </header>
+        </div>
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Personel Details</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form action="success.html" method="post">
+                    <fieldset>
+                        <legend>
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="exampleFirstName" placeholder="Enter your first name"  required />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">LastName</label>
+                                <input type="text" class="form-control" id="exampleLastName" placeholder="Enter your last name" required />
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="Age">Age</label>
+                                <input type="number" class="form-control" id="exampleAge" placeholder="Enter your age" required />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label class="my-1 mra-2">Gender</label>
+                                <select class="custom-select my-1 mr-sm-2" id="inlineGenderSelectPref" required>
+                                    <option selected>Select Gender...</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Do Not Say</option>
+                                </select>
+                            </div>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Current Address</h3>
+                            <div class="form-group">
+                                <label for="AddressLine1">Zipcode</label>
+                                <input type="text" class="form-control" id="zipcode" placeholder="Enter your Zipcode" onblur="checkZipcode();" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="AddressLine1">Address Line 1</label>
+                                <input type="text" class="form-control" id="Address1" placeholder="Enter your Address" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="AddressLine2">Address Line 2</label>
+                                <input type="text" class="form-control" id="Address2" placeholder="Optional" />
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="State">State</label>
+                                    <input type="text" class="form-control" id="State" placeholder="Enter your State" required />
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="City">City</label>
+                                    <input type="text" class="form-control" id="City" placeholder="Enter your City" required />
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Country">Country</label>
+                                <select class="bfh-countries" data-country="US" required></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="AddressLine1">Is permanent address the same as current address</label>
+                                <select id="checkAddress" onchange="checkAdd();">
+                                    <option value="">select</option>
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <div class="form-group" id="address2">
+
+                            </div>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <h3>Contact Details</h3>
+                            <div class="form-group col-md-3">
+                                <label for="Country Code">Country Code</label>
+                                <select class="custom-select my-1 mr-sm-2" id="inlineCountryCode" required>
+                                    <option selected>Select Country Code...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">93</option>
+                                    <option value="3">355</option>
+                                    <option value="4">1-684</option>
+                                    <option value="5">880</option>
+                                    <option value="6">1-246</option>
+                                    <option value="7">355</option>
+                                    <option value="8">53</option>
+                                    <option value="9">33</option>
+                                    <option value="10">1-876</option>
+                                    <option value="11">509</option>
+                                    <option value="12">44</option>
+                                    <option value="13">41</option>
+                                    <option value="14">1-787</option>
+                                    <option value="15">52</option>
+                                    <option value="16">86</option>
+                                    <option value="17">1-809</option>
+                                    <option value="18">91</option>
+                                    <option value="19">39</option>
+                                    <option value="20">212</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="areaCode">Area Code</label>
+                                <input type="number" class="form-control" id="areaCode" placeholder="Enter area code" />
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="phone">Phone</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" required />
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="ext">Extension</label>
+                                <input type="number" class="form-control" id="ext" placeholder="Enter extension" />
+                            </div>
+                        </legend>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary my-1">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

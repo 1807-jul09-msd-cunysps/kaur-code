@@ -4,3 +4,21 @@
 
 /.vs/Rev-CUNY/v15
 /EmployeeHelpApp/.vs/EmployeeHelpApp/v15
+/PersonContactApp/.vs/PersonContactApp/v15
+/PersonContactApp/ContactLibrary/bin/Debug
+/PersonContactApp/ContactLibrary/obj/Debug/ContactLibrary.csproj.CopyComplete
+/AdvanceCSharpConcepts/.vs/AdvanceCSharpConcepts/v15/Server/sqlite3
+/AdvanceCSharpConcepts/AdvanceCSharpConcepts/obj/Debug
+/AdvanceCSharpConcepts/AsyncAndAwait/obj/Debug
+/ConsumeConversionService/.vs/ConsumeConversionService/v15/Server/sqlite3
+/ConsumeConversionService/ConsumeConversionService/bin/Debug
+/ConsumeConversionService/ConsumeConversionService/obj/Debug
+/ConversionSOAPService/.vs/ConversionSOAPService/v15/Server/sqlite3
+/ConversionSOAPService/ConversionSOAPService/bin
+/ConversionSOAPService/ConversionSOAPService/obj/Debug
+/ConsumeRestApi/.vs/ConsumeRestApi/v15/Server/sqlite3
+/ConsumeRestApi/ConsumeRestApi/bin/Debug
+/ConsumeRestApi/ConsumeRestApi/obj/Debug
+/ADO.NetDemo/.vs/ADO.NetDemo/v15/Server/sqlite3
+/ADO.NetDemo/ADO.NetDemo/bin/Debug
+/ADO.NetDemo/ADO.NetDemo/obj/Debug
